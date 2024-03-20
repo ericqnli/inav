@@ -33,10 +33,10 @@
 #define BEEPER_PWM_FREQUENCY    2500
 
 // *************** SPI1 Flash BLACKBOX  ******************
-#define USE_SPI_DEVICE_1
-#define SPI1_SCK_PIN            PB3
-#define SPI1_MISO_PIN           PB4
-#define SPI1_MOSI_PIN           PD7
+//#define USE_SPI_DEVICE_1
+//#define SPI1_SCK_PIN            PB3
+//#define SPI1_MISO_PIN           PB4
+//#define SPI1_MOSI_PIN           PD7
 
 //#define USE_BLACKBOX
 //#define USE_FLASHFS
@@ -49,19 +49,19 @@
 //#define W25Q64_SPI_BUS          BUS_SPI1
 //#define W25Q64_CS_PIN           PD6
 
-#define USE_FLASH_M25P16
-#define M25P16_SPI_BUS          BUS_SPI1
-#define M25P16_CS_PIN           PD6 
+//#define USE_FLASH_M25P16
+//#define M25P16_SPI_BUS          BUS_SPI1
+//#define M25P16_CS_PIN           PD6 
 
 
 // *************** SPI1 Flash BLACKBOX  *********Might Affect UART2********
-#define USE_SPI_DEVICE_1
-#define SPI1_SCK_PIN            PB3
-#define SPI1_MISO_PIN           PB4
-#define SPI1_MOSI_PIN           PD7
+//#define USE_SPI_DEVICE_1
+//#define SPI1_SCK_PIN            PB3
+//#define SPI1_MISO_PIN           PB4
+//#define SPI1_MOSI_PIN           PD7
 
-#define USE_BLACKBOX
-#define USE_FLASHFS
+//#define USE_BLACKBOX
+//#define USE_FLASHFS
 
 //#define USE_FLASH_W25N01G
 //#define W25N01G_SPI_BUS         BUS_SPI1
@@ -71,67 +71,67 @@
 //#define W25Q64_SPI_BUS          BUS_SPI1
 //#define W25Q64_CS_PIN           PD6
 
-#define USE_FLASH_M25P16
-#define M25P16_SPI_BUS          BUS_SPI1
-#define M25P16_CS_PIN           PD6 
+//#define USE_FLASH_M25P16
+//#define M25P16_SPI_BUS          BUS_SPI1
+//#define M25P16_CS_PIN           PD6 
 
 //#define ENABLE_BLACKBOX_LOGGING_ON_SPIFLASH_BY_DEFAULT
 // *************** IMU generic ***********************
 //#define USE_DUAL_GYRO
-// *************** SPI1 IMU1 ******************************
-//#define USE_SPI_DEVICE_1
-//#define SPI1_SCK_PIN            PB3
-//#define SPI1_MISO_PIN           PB4
-//#define SPI1_MOSI_PIN           PD7
+// *************** SPI2 IMU1 ******************************
+//#define USE_SPI_DEVICE_2
+//#define SPI1_SCK_PIN            PB13
+//#define SPI1_MISO_PIN           PB14
+//#define SPI1_MOSI_PIN           PB15
 
 //#define USE_IMU_ICM42605
 
 //#define IMU_ICM42605_ALIGN      CW90_DEG_FLIP
 //#define ICM42605_SPI_BUS        BUS_SPI1
-//#define ICM42605_CS_PIN         PA15
+//#define ICM42605_CS_PIN         PB15
 
 //#define USE_IMU_ICM20689
 
 //#define IMU_ICM20689_ALIGN      CW90_DEG_FLIP
 //#define ICM20689_SPI_BUS        BUS_SPI1
-//#define ICM20689_CS_PIN         PA15
+//#define ICM20689_CS_PIN         PB15
 
-// *************** SPI2 IMU0 ******************************
+// *************** SPI1 IMU0 ******************************
 #define USE_SPI
-#define USE_SPI_DEVICE_2
-#define SPI2_SCK_PIN            PB13
-#define SPI2_MISO_PIN           PB14
-#define SPI2_MOSI_PIN           PB15
+#define USE_SPI_DEVICE_1
+#define SPI2_SCK_PIN            PA5 // PB13 
+#define SPI2_MISO_PIN           PA6 // PB14
+#define SPI2_MOSI_PIN           PA7 // PB15
 
 #define USE_IMU_MPU6000
 
 #define IMU_MPU6000_ALIGN       CW90_DEG
-#define MPU6000_SPI_BUS          BUS_SPI2
-#define MPU6000_CS_PIN          PB12
+#define MPU6000_SPI_BUS         BUS_SPI1 // BUS_SPI2
+#define MPU6000_CS_PIN          PA4 // PB12
 
 #define USE_IMU_MPU6500
 
 #define IMU_MPU6500_ALIGN       CW90_DEG
-#define MPU6500_SPI_BUS         BUS_SPI2
-#define MPU6500_CS_PIN          PB12
+#define MPU6500_SPI_BUS         BUS_SPI1 // BUS_SPI2
+#define MPU6500_CS_PIN          PA4 // PB12
 
 #define USE_IMU_MPU9250
 
 #define IMU_MPU9250_ALIGN       CW90_DEG
-#define MPU9250_SPI_BUS          BUS_SPI2
-#define MPU9250_CS_PIN          PB12
+#define MPU9250_SPI_BUS          BUS_SPI1 // BUS_SPI2
+#define MPU9250_CS_PIN          PA4 // PB12
 
 #define USE_IMU_BMI160
 
 #define IMU_BMI160_ALIGN       CW270_DEG
-#define BMI160_SPI_BUS          BUS_SPI2
-#define BMI160_CS_PIN          PB12
+#define BMI160_SPI_BUS          BUS_SPI1 // BUS_SPI2
+#define BMI160_CS_PIN          PA4 // PB12
 
 #define USE_IMU_BMI270
 
 #define IMU_BMI270_ALIGN       CW270_DEG
-#define BMI270_SPI_BUS          BUS_SPI2
-#define BMI270_CS_PIN          PB12
+#define BMI270_SPI_BUS          BUS_SPI1 // BUS_SPI2
+#define BMI270_CS_PIN          PA4 // PB12
 
 // *************** SPI4 OSD **********Some readon the SPI OLED was there***********
 //#define USE_SPI_DEVICE_4
@@ -228,8 +228,8 @@
 #define ADC_CHANNEL_2_PIN           PC1  //ADC123 CURR1
 #define ADC_CHANNEL_3_PIN           PC5  //ADC12  RSSI
 #define ADC_CHANNEL_4_PIN           PC4  //ADC12  AirS
-#define ADC_CHANNEL_5_PIN           PA4  //ADC12  VB2
-#define ADC_CHANNEL_6_PIN           PA7  //ADC12  CU2
+//#define ADC_CHANNEL_5_PIN           PA4  //ADC12  VB2
+//#define ADC_CHANNEL_6_PIN           PA7  //ADC12  CU2
 
 #define VBAT_ADC_CHANNEL            ADC_CHN_1
 #define CURRENT_METER_ADC_CHANNEL   ADC_CHN_2
